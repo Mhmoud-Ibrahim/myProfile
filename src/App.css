@@ -1,0 +1,214 @@
+*{
+  box-sizing: border-box;
+}
+body{
+ margin: 0 !important;
+ padding: 0 !important;
+  font-size: clamp(12px,5vw,16px) !important;
+  background-image:linear-gradient(#FFE100,#C49A25,#7A4900,#000);
+}
+:root{
+  --main-color:#FFE100;
+  --second-color:#C49A25;
+  --thierd-color:#7A4900;
+}
+a{
+  text-decoration: none !important;
+  color:black!important;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+img{
+  width: max(8px,2vw,100%);
+  height: max(8px,2vh,100%);
+}
+.text-main{
+  color: var(--main-color);
+}
+.text-thierd{
+  color: var(--thierd-color) !important;
+}
+.bg-main{
+  background-color: var(--main-color) !important;
+}
+.bg-second{
+  background-color: var(--second-color) !important;
+}
+.bg-theird {
+  background-color: var(--thierd-color) !important;
+}
+.btn-second{
+  background-color: var(--main-color) !important;
+  color: #7A4900;
+  transition: 0.2s all;
+  
+}
+.btn-second:hover{
+  background-color: var(--thierd-color) !important;
+  color: var(--main-color);
+  box-shadow: 3px 3px 5px #777;
+  box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff !important; 
+}
+/* navbar */
+.navbar{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: monospace;
+  width: min(100%,100vw,100%);
+}
+
+.nav-link ,.navbar-brand {
+  color:#f0f0f0 !important;
+  transition: 0.3s all ease-in-out;
+}
+.nav-link:hover{
+  color:var(--thierd-color)!important;
+  transform: translateY(7px);
+}
+/* end navbar */
+
+/* home */
+.myName{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+.myName::first-letter{
+color: red;
+font-weight: 600;
+}
+.myPic img{
+  width: max(8px,2vw,100%);
+  transition: 0.3s all ;
+  border-radius: 50% !important;
+  border: 2px double var(--thierd-color);
+}
+.myPic img:hover{
+  box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
+  border: 2px double var(--thierd-color);
+  border-radius: 50% !important;
+}
+/* end home */
+/* projects */
+.item{
+position: relative;
+  font-size:clamp(10px,2vw,16px);
+ height: auto;
+ border: 2px solid #f0f0f0;
+}
+.item h2,p{
+font-size: clamp(14px,2vw,16px);
+}
+ .layer{
+  position: absolute;
+ top: 100%;
+ transition: 0.3s all;
+ opacity: 0;
+ background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+ }
+ .item:hover .layer{
+  top:0;
+  bottom: 0;
+  opacity: 1;
+ }
+ .item:hover img{
+  filter: blur(5px);
+ }
+ .layer h2{
+  color: var(--main-color);
+ }
+img{
+  width: max(8px,2vw,100%);
+}
+
+/* end projects */
+/* about  */
+.about{
+width: 100%;
+  font-size: clamp(11px,2vw,16px);
+}
+.special-heading{
+  color: var(--main-color);
+  font-size:clamp(45px,7vw,70px) !important;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 ;
+  letter-spacing: -3px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .special-heading + p{
+      color: var(--thierd-color);
+      margin: -40px 0 0 ;
+      font-size:clamp(20px,4vw,35px) !important;
+      font-weight: 600;
+      text-align: center;
+      border-width: 50px;
+      position: relative;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+
+  .about li{
+    list-style: none;
+    border-bottom: 1px solid #777;
+    
+  }
+  .about li span{
+    color:  darkblue !important;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, seri ;
+  }
+  progress{
+    accent-color:var(--thierd-color) !important;
+   width: 85%;
+  }
+ 
+/* end-about */
+/* picture */
+.slick-dots li button:before{
+ 
+  color: var(--main-color) !important;
+ top: 0;
+margin-top: 0;
+}
+.slider{
+  background-image: linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/fff.gif);
+  background-position: center center;
+  background-size: cover;
+}
+
+/* end-picture */
+
+
+
+/* contact */
+.bg-gray{
+  background-color: #aaa;
+}
+input{
+  caret-color: brown;
+  font-size: clamp(10px,2vw,16px) !important;
+  color: var(--thierd-color) !important;
+}
+::placeholder{
+  font-size: clamp(10px,2vw,16px);
+  margin: auto;
+  margin-top: 0;
+
+  color: var(--thierd-color) !important;
+}
+/* contact */
+ /* start footer */
+ .footer{
+  padding: 30px 10px;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+.footer .apan {
+  font-weight: 800;
+}
+/*footer*/
+
+
