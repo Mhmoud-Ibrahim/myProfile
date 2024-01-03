@@ -58,7 +58,6 @@ export default function Picture() {
   return <>
   <Helmet>
     <title>Picture</title>
-    <link rel="icon" type="image/svg+xml" href="/m.svg" />
   </Helmet>
   <div className="container slider m-auto w-100 py-2">
    <Slider   className="  w-75 m-auto p-0 mt-5" {...settings}>
