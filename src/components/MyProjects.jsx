@@ -22,7 +22,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet } from "react-helmet";
 
-
 export default function MyProjects() {
  const projectdetails =[
   {id:1,img:market,name:'Market',link:'https://mhmoud-ibrahim.github.io/market/',discreption:'react website build with real database with api and backend  '},
@@ -61,7 +60,8 @@ useEffect(()=>{
   <div className="layer  p-2">
     <div className="d-flex justify-content-around">
        <h2  className="text-thierd  fs-5 fw-bold">{project?.name}</h2>
-    <Link className="btn btn-sm btn-second " to={project?.link}>show</Link>
+    
+    <Link className="btn btn-sm btn-second "  to={window.location(project?.link)} >show</Link>
     </div>
     <p  className="text-light">{project?.discreption}</p>
   </div>
