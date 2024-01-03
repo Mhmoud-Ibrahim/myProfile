@@ -55,22 +55,16 @@ useEffect(()=>{
 <div data-aos='zoom-left' className="container mt-5 py-3">
   <div className="row g-3 ">
    {projectdetails.map((project)=> <div key={project.id} className="col-md-4  p-1">
- 
  <div data-aos='zoom-in-right' className="item shadow-sm rounded-2  text-center ">
-  <img src={project.img} height={150} className="w-100 rounded-2" alt="" />
-  <h2 className="text-second">{project.name}</h2>
-
+  <img src={project?.img} height={150} className="w-100 rounded-2" alt="" />
+  <h2 className="text-second">{project?.name}</h2>
   <div className="layer  p-2">
     <div className="d-flex justify-content-around">
-       <h2  className="text-thierd  fs-5 fw-bold">{project.name}</h2>
-    <Link className="btn btn-sm btn-second " to={project.link}>show</Link>
-  
+       <h2  className="text-thierd  fs-5 fw-bold">{project?.name}</h2>
+    <Link className="btn btn-sm btn-second " to={project?.link}>show</Link>
     </div>
-   
-    <p  className="text-light">{project.discreption}</p>
-  
+    <p  className="text-light">{project?.discreption}</p>
   </div>
- 
  </div>
    </div>  )}
   </div>

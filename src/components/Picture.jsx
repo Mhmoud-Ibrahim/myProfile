@@ -72,7 +72,7 @@ export default function Picture() {
   {projectdetails.map((project,index)=><>
    <div key={index}  className="col-md-4">
     <div  className="projectCard    cursor-pointer  text-center p-2">
-      <Link to={project.link}>
+      <Link to={project?.link}>
       <img data-aos="fade-right"    data-aos-duration={'1500'+project.id} src={project.img}  className="w-100 border border-1 border-light img-fluid" loading="lazy" alt="" />
       <h5 className="text-main">{project.name}</h5>
       </Link>
