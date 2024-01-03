@@ -61,7 +61,7 @@ useEffect(()=>{
     <div className="d-flex justify-content-around">
        <h2  className="text-thierd  fs-5 fw-bold">{project?.name}</h2>
     
-    <Link className="btn btn-sm btn-second "  to={project?.link} >show</Link>
+    <Link className="btn btn-sm btn-second "  to={`/${project?.link}`} >show</Link>
     </div>
     <p  className="text-light">{project?.discreption}</p>
   </div>
